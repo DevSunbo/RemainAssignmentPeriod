@@ -16,6 +16,9 @@ h1{
   color: #7f8c8d;
 }
 
+.practiceName{
+  margin: 10px;
+}
 .form,
 .greetings{
   display : none;

@@ -38,11 +38,16 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     const deadlineSpan = document.createElement("span");
     const newId = toDos.length + 1;
     span.innerText = text;
-    deadlineSpan.innerText = deadlineText;
+    deadlineSpan.innerText = `~ ${deadlineText}`;
     li.appendChild(delBtn);
     li.appendChild(span);
     li.appendChild(deadlineSpan);
     li.id = newId;
+
+    /* span class 설정 */
+    span.classList.add("practiceName");
+    deadlineSpan.classList.add("deadlineClass");
+    /* */
     toDoList.appendChild(li);
     const toDoObj = {
       text: text,
