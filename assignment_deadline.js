@@ -65,7 +65,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     li.appendChild(remainPeriodDateSpan);
     li.id = newId;
     /* span class 설정 */
-    span.classList.add("practiceName");
+    span.classList.add("assignmentName");
     deadlineSpan.classList.add("deadlineClass");
     /* */
     toDoList.appendChild(li);
